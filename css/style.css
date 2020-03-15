@@ -1,0 +1,220 @@
+body {
+    background-color: #d1b896;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 3px solid #ffffff;
+    padding: 5px 5px 5px 5px;
+  /* Шрифт всего сайта */
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: small;
+}
+
+main {
+  background-color: #d1b896;
+  margin: 3px 3px 3px;
+  border: 3px solid #ffffff;
+  padding: 0 0 4px;
+}
+
+/*Изображение банера веб-сайта*/
+.frame {
+  position: relative;
+  margin: 0 3px 3px;
+  border: 3px solid #ffffff;
+  width: 944px;
+}
+
+/*Меню веб-сайта*/
+@import href="index.html";
+.menu-main {
+  list-style: none;
+  margin: 3px -4px 3px;
+  padding: 8px 0 4px;
+  text-align: center;
+  background: #ffffff;
+  background-color: #f3c065;  /*Поле меню*/
+  border: 3px solid #ffffff;  /*Размеры и цвет рамки (бардюра) меню*/
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #ffffff;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #555753;}
+.menu-main a.current, .menu-main a:hover{color: #ffffff;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #ffffff;
+  transition: .4s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+}
+
+/*Настройки плавающего меню*/
+.sticky {
+  position: fixed;
+  top: 0px;  /* если ноль заменить на число (и в скрипте тоже), то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом. Применим, например, при фиксированном сверху меню */
+  z-index: 101;
+}
+
+/*Форма поиска*/
+.form-search {
+  position: relative;
+  align-items: center; /*выравнивает по вертикали*/
+  justify-content: center; /*выравнивает по горизонтали*/
+  top: 20%; /*Расстояние формы от верха экрана*/
+  left: 40%; /*Растояние формы от левого края экрана*/
+}
+/*Заголовки*/
+h1 {
+  text-align: center;
+  border: 3px solid #ffffff; /*Cплошная рамка вокруг заголовка*/
+  background-color: #f3c065; 
+  padding: 10px;
+  
+}
+h2 {
+  text-align: center;
+}
+/*Наименование литературы*/
+h4 {
+  text-align: left;
+  font-size: 120%;
+  font-weight: bold;
+  margin: 8px;
+  }
+
+ h3, dt {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 115%;
+ }
+
+ dt  {
+  color: #ffffff;
+ }
+
+ dd {
+  text-align: justify;
+ }
+
+/*Текст сайта*/
+p {
+  text-align: justify;
+  text-align-last: left;
+  font-size: 110%;
+  margin: 0 7px 25px;
+}
+
+div {
+  padding: 7px 7px 7px 7px;
+}
+
+/*Выделение активной вкладки меню*/
+.active {
+   box-shadow: 0 3px #ffffff;
+   margin: 2px 2px 3px 2px;
+}
+
+/*Иконки коверта*/
+.thumb img  {
+    position: relative;
+    float: left;
+    width: 20px;
+    top:-20px;
+    padding: 2px 2px 2px 2px;
+    margin: 0 3px 3px 3px;
+}
+
+/*Фото автора сайта*/
+img.author {
+  position: relative;
+  width: 14%;
+  margin: 0 0 5px 5px;
+  padding: 2px 2px 2px 2px;
+  border: 3px solid #ffffff; 
+}
+
+.author {
+   font-size: 90%;
+
+}
+
+/*Фото стрелки для перехода в начало страницы
+.rightpic {
+  position: relative;
+  top:-60px;
+  float: right;
+  border: none;
+  width: 7%;
+  margin: 0 0 5px 5px;
+  padding: 2px 0 2px 2px;
+}*/
+
+/*Стрелка для перемещения к началу страницы
+|--------------------------------------------------------------------------
+| UItoTop jQuery Plugin 1.2
+| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
+|--------------------------------------------------------------------------
+*/
+
+#toTop {
+  display:none;
+  text-decoration:none;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  overflow:hidden;
+  width:51px;
+  height:51px;
+  border:none;
+  text-indent:100%;
+  background:url(../img/totop.png) no-repeat left top;
+}
+
+#toTopHover {
+  background:url(../img/totop.png) no-repeat left -51px;
+  width:51px;
+  height:51px;
+  display:block;
+  overflow:hidden;
+  float:left;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+  outline:none;
+}

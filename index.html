@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  	<meta charset="utf-8">
+  	<title>Coda. Библиотека программиста</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.png">
+  </head>
+  <body>
+    <header>
+      <img src="img/baner.png" alt="Книги на полках" class="frame">
+        <div class="form-search">
+          <form action="http://google.com/search" method="get" target="_blank">
+          <!--значение 808327 изменить на адрес своего веб-сайта-->
+          <input type="hidden" name="searchid" value="808327">
+          <input type="search" name="text" required placeholder="Поиск по сайту" style="
+        padding: 5px 2px 5px 25px;
+        background: url('http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s25/search.png') no-repeat scroll 0 50%;
+        ">
+          </form>
+      </div>
+      <div>
+      <nav>
+        <ul class="menu-main">
+          <li class="active"><a href="#">Главная</a></li>
+          <li><a href="basics_prog/algorithm/algorithm.html">Основы программирования</a></li>
+          <li><a href="web/ajax/ajax.html">Веб-верстка, дизайн и сети</a></li>
+          <li><a href="lang/c/c.html">Языки программирования</a></li>
+          <li><a href="progs/progs.html">ПО для разработчика</a></li>
+          <li><a href="about.html">О библиотеке</a></li>
+        </ul>
+       </nav>
+     </div>
+    </header>
+    <footer>
+    <div>  
+
+      <!-- Скрипт даты --> 
+      <script type="text/javascript">// <![CDATA[
+          day = new Date(); hour = day.getHours(); if (hour>=5 && hour<12) greeting = "Доброе утро"; else { if (hour>=12 && hour<18) greeting = "Добрый день"; else { if (hour>=18 && hour<24) greeting = "Добрый вечер"; else { if (hour>=0 && hour<5) greeting = "Доброй ночи"; } } } document.write(greeting);
+            // ]]&gt;
+            // ]]&gt;
+            // ]]&gt;
+            // ]]&gt;
+            // ]]&gt;
+            // ]]></script>
+           !  Сегодня
+      <script type="text/javascript">// <![CDATA[
+          // <![CDATA[
+          var d = new Date();
+
+          var day=new Array("Воскресенье","Понедельник","Вторник",
+          "Среда","Четверг","Пятница","Суббота");
+
+          var month=new Array("января","февраля","марта","апреля","мая","июня",
+          "июля","августа","сентября","октября","ноября","декабря");
+
+          document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()] + " " + d.getFullYear() + " г.");
+          // ]]&gt;
+          // ]]&gt;
+          // ]]&gt;
+          // ]]&gt;
+          // ]]&gt;
+          // ]]>
+      </script>
+    </div>
+
+      <p class="author">Автор: &copy Андрей Овчаров, 2019.</p>
+      <div class="thumb">
+      <a href="mailto:ovcharov.a@ukr.net"><img src="img/envelope.png" alt="Конверт" title="Задать вопрос автору по электронной почте"></a>
+    </div>
+    </footer>
+  </body>
+</html>
