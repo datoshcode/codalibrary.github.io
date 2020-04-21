@@ -44,10 +44,10 @@
      </div>
       <!-- jquery -->
       <script src="../../js/jquery-1.7.2.min.js"></script>
-      <script src="../../js/sticky.js" type="text/javascript"></script>
+      <script src="../../js/sticky.js"></script>
     </header>
     <main>
-    <div>
+    <section>
       <h1 id="up">Полезные веб-сайты</h1>
 
       <!-- Веб-сайты с учебным материалом -->
@@ -144,8 +144,6 @@
         Официальная спецификация (стандарт языка) HTML.
       </p>
 
-
-
       <!-- Форумы -->
       <h2>Форумы и разделы форумов по вёрстке</h2>
 
@@ -218,13 +216,13 @@
       <h4><a href="https://validator.w3.org/" target="_blank" title="Перейти">
       w3.org (HTML)</a></h4>
       <p>
-        Совмещённый онлайн-валидатор W3C для проверки валидности html кода веб-страниц.
+        Совмещённый онлайн-валидатор W3C для проверки валидности HTML кода веб-страниц.
       </p>
 
       <h4><a href="http://www.css-validator.org/" target="_blank" title="Перейти">
       w3.org (CSS)</a></h4>
       <p>
-        Совмещённый онлайн-валидатор W3C для проверки валидности css кода веб-страниц.
+        Совмещённый онлайн-валидатор W3C для проверки валидности CSS кода веб-страниц.
       </p>
 
       <h4><a href="http://www.jslint.com/" target="_blank" title="Перейти">
@@ -335,6 +333,7 @@
       <h4><a href="https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm" target="_blank" title="Перейти">Web Developer</a></h4>
       <p>
         Web Developer добавляет в браузер дополнительную панель с инструментами. Внутри нее находится 10 вкладок: Disable, Cookies, CSS, Forms, Images, Information, Miscellaneous, Outline, Resize и Tools. Функционал расширения позволяет:
+      </p>  
         <ul>
           <li>отключать CSS, JS и изображения;</li>
           <li>проверять валидность HTML, CSS;</li>
@@ -344,7 +343,6 @@
           <li>изменять размер окна браузера;</li>
           <li>очищать кэш;</li>
         </ul>
-      </p>
       <p>
         Web Developer остается популярным расширением среди разработчиков. Его можно сравнить с мультитулом в реальной жизни: всегда под рукой необходимый набор инструментов.
       </p>
@@ -357,12 +355,12 @@
       <h4><a href="https://chrome.google.com/webstore/search/wireframify" target="_blank" title="Перейти">Wireframify</a></h4>
       <p>
         Дизайнеры проектируют сайты с помощью wireframe — это набор линий, блоков и подписей. Такой подход позволяет создавать архитектуру проекта с учетом отступов, размеров и расположения блоков на странице. Wireframify включает альтернативный вид сайта в виде wireframe, что позволит избежать ошибочного использования:
+      </p>  
         <ul>
           <li>отрицательных margin;</li>
           <li>выравнивания элементов с помощью padding;</li>
           <li>добавления отступов с помощью CSS свойств left, right;</li>
         </ul>
-      </p>
 
       <h4><a href="https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=en" target="_blank" title="Перейти">What Font</a></h4>
       <p>
@@ -374,10 +372,6 @@
         YSlow — инструмент, который не только проверяет скорость загрузки той или иной веб-страницы, но и подсказывает разработчику, что её тормозит. Для этого расширение проверяет сайт на соответствие 23 из 34 правил производительности, сформулированных командой компании &laquo;Yahoo&raquo;.
       </p>
 
-
-
-      </p>
-
       <h3>Mozilla Firefox</h3>
 
       <h4><a href="https://addons.mozilla.org/ru/firefox/addon/colorzilla/" target="_blank" title="Перейти">
@@ -387,8 +381,7 @@
         С ColorZilla вы можете получить цветное считывание из любой точки вашего браузера, быстро настроить этот цвет и вставить его в другую программу.
       </p>
 
-
-    </div>
+    </section>
     <br>
     </main>
     <footer>
@@ -396,20 +389,20 @@
     <!-- Time date -->
       <div>
       <span id="time">Дата и время</span>
-      <script type="text/javascript" src="../../js/time-date.js"></script>
+      <script src="../../js/time-date.js"></script>
       </div>
       
-      <p class="author">Автор: &copy Андрей Овчаров, 2019.</p>
+      <p class="author">Автор: &copy; Андрей Овчаров, 2019.</p>
       <div class="thumb">
       <a href="mailto:ovcharov.a@ukr.net"><img src="../../img/envelope.png" alt="Конверт" title="Задать вопрос автору по электронной почте"></a>
     </div>
     </footer>
     <!-- easing plugin ( optional ) -->
-    <script src="../../js/easing.js" type="text/javascript"></script>
+    <script src="../../js/easing.js"></script>
     <!-- UItoTop plugin -->
-    <script src="../../js/jquery.ui.totop.js" type="text/javascript"></script>
+    <script src="../../js/jquery.ui.totop.js"></script>
     <!-- Starting the plugin -->
-    <script type="text/javascript">
+    <script>
     $(document).ready(function() {
       /*
       var defaults = {
