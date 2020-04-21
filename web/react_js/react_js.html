@@ -45,10 +45,10 @@
  </div>
       <!-- jquery -->
       <script src="../../js/jquery-1.7.2.min.js"></script>
-      <script src="../../js/sticky.js" type="text/javascript"></script>
+      <script src="../../js/sticky.js"></script>
     </header>
     <main>
-      <div>
+      <section>
       <h1 id="up">Литература по React.js</h1>
 
       <!-- Б -->
@@ -75,6 +75,7 @@
         Результатом курса будет небольшое приложение новостей, в котором можно добавить новость, а так же посмотреть у новости &laquo;подробнее&raquo;.
         <br>
         После прочтения курса, вы научитесь:
+      </p>
         <ul>
           <li>Создавать компоненты, учитывая propTypes</li>
           <li>Грамотно использовать props и state компонента</li>
@@ -82,14 +83,13 @@
           <li>Работать с react dev tools</li>
           <li>Рефакторить и быть лучше;)</li>
         </ul>
-      </p>
       <p>
         В тексте курса часто встречаются небольшие задачки, а так же приводится их решение. Для успешного прохождения курса, вам потребуются знания:
+      </p>
         <ul>
           <li>HTML/CSS</li>
           <li>Javascript (ну или хотя бы jQuery, если вы понимаете, что $ всего лишь функция...)</li>
         </ul>
-      </p>
       <p>
         В процессе изучения, нам потребуется локальный сервер. Для этого мы воспользуемся node.js и express. Знание этих технологий не обязательно, достаточно будет просто &laquo;скопировать/вставить&raquo;, либо воспользоваться своим локальным сервером, например на Apache.
         Рекомендую после изучения начального курса посмотреть в сторону Flux-подхода, а именно - Redux.
@@ -101,6 +101,7 @@
       <p>
         Незаменимая вводная книга по технологии React для взыскательных JavaScript - разработчиков. Все самое интересное о сверхпопулярном инструменте от компании Facebook. В книге рассмотрены основные концепции высокопроизводительного программирования при помощи React, реальные примеры кода и доступные блок-схемы.<br>
         Прочитав ее, вы научитесь:
+      </p>
         <ul>
           <li>Создавать и использовать собственные компоненты React наряду с универсальными компонентами DOM.</li>
           <li>Писать компоненты для таблиц данных, позволяющие редактировать, сортировать таблицу, выполнять в ней поиск и экспортировать ее содержимое.</li>
@@ -109,10 +110,8 @@
           <li>Работать с инструментами ESLint, Flow и Jest, позволяющими проверять и тестировать код по мере разработки приложения.</li>
           <li>Обеспечивать коммуникацию между компонентами при помощи Flux.</li>
         </ul>
-      </p>
 
-
-    </div>
+    </section>
     <br>
     </main>
     <footer>
@@ -120,20 +119,20 @@
       <!-- Time date -->
       <div>
       <span id="time">Дата и время</span>
-      <script type="text/javascript" src="../../js/time-date.js"></script>
+      <script src="../../js/time-date.js"></script>
       </div>
       
-      <p class="author">Автор: &copy Андрей Овчаров, 2019.</p>
+      <p class="author">Автор: &copy; Андрей Овчаров, 2019.</p>
       <div class="thumb">
       <a href="mailto:ovcharov.a@ukr.net"><img src="../../img/envelope.png" alt="Конверт" title="Задать вопрос автору по электронной почте"></a>
       </div>
     </footer>
     <!-- easing plugin ( optional ) -->
-    <script src="../../js/easing.js" type="text/javascript"></script>
+    <script src="../../js/easing.js"></script>
     <!-- UItoTop plugin -->
-    <script src="../../js/jquery.ui.totop.js" type="text/javascript"></script>
+    <script src="../../js/jquery.ui.totop.js"></script>
     <!-- Starting the plugin -->
-    <script type="text/javascript">
+    <script>
       $(document).ready(function() {
         /*
         var defaults = {
