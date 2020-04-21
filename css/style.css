@@ -137,9 +137,28 @@ p {
   margin: 0 7px 25px;
 }
 
-div {
+/*Cписок в описании литературы*/
+ul {
+  font-size: 110%;
+}
+
+/*Написания символов, строк кода в тексте*/
+code {
+  font-size: 120%;
+}
+
+div, section {
   padding: 7px 7px 7px 7px;
 }
+
+/*Логотип валидности сайта html5 css3*/
+.valid {
+  position: relative;
+  float: right;
+  top: -35px;
+  padding: 2px 2px 2px 2px;
+  margin: 0 0 5px 5px;
+  }
 
 /*Выделение активной вкладки меню*/
 .active {
