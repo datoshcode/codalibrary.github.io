@@ -127,6 +127,8 @@ h4 {
 
  dd {
   text-align: justify;
+  font-size: 110%;
+  margin: 0 7px 25px;
  }
 
 /*Текст сайта*/
@@ -138,7 +140,7 @@ p {
 }
 
 /*Cписок в описании литературы*/
-ul {
+ul, ol {
   font-size: 110%;
 }
 
