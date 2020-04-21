@@ -36,7 +36,7 @@
     <div>  
 
       <!-- Скрипт даты --> 
-      <script type="text/javascript">// <![CDATA[
+      <script>// <![CDATA[
           day = new Date(); hour = day.getHours(); if (hour>=5 && hour<12) greeting = "Доброе утро"; else { if (hour>=12 && hour<18) greeting = "Добрый день"; else { if (hour>=18 && hour<24) greeting = "Добрый вечер"; else { if (hour>=0 && hour<5) greeting = "Доброй ночи"; } } } document.write(greeting);
             // ]]&gt;
             // ]]&gt;
@@ -45,7 +45,7 @@
             // ]]&gt;
             // ]]></script>
            !  Сегодня
-      <script type="text/javascript">// <![CDATA[
+      <script>// <![CDATA[
           // <![CDATA[
           var d = new Date();
 
@@ -65,10 +65,11 @@
       </script>
     </div>
 
-      <p class="author">Автор: &copy Андрей Овчаров, 2019.</p>
-      <div class="thumb">
-      <a href="mailto:ovcharov.a@ukr.net"><img src="img/envelope.png" alt="Конверт" title="Задать вопрос автору по электронной почте"></a>
+      <p class="author">Автор: &copy; Андрей Овчаров, 2019.</p>
+      <div>
+      <a class="thumb" href="mailto:ovcharov.a@ukr.net"><img src="img/envelope.png" alt="Конверт" title="Задать вопрос автору по электронной почте"></a>
+      <img class="valid" src="img/valid.png" alt="Логотип валидности сайта html5, css3">
     </div>
-    </footer>
+       </footer>
   </body>
 </html>
