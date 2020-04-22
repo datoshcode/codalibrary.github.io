@@ -25,7 +25,6 @@ main {
 }
 
 /*Меню веб-сайта*/
-@import href="index.html";
 .menu-main {
   list-style: none;
   margin: 3px -4px 3px;
