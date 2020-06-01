@@ -4,4 +4,4 @@
 Автор веб-сайта библиотеки: Андрей Овчаров.<br> 
 E-mail: ovcharov.a@ukr.net<br>
 
-Библиотека доступна по сссылке: https://datoshcode.github.io/codalibrary.github.io/index.html
+Библиотека доступна по сссылке: https://datoshcode.github.io/codalibrary.github.io/
